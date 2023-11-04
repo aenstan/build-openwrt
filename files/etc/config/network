@@ -6,16 +6,15 @@ config interface 'loopback'
 	option netmask '255.0.0.0'
 
 config interface 'lan'
-	option type 'bridge'
 	option proto 'static'
 	option netmask '255.255.255.0'
 	option delegate '0'
 	option _orig_ifname 'eth0'
 	option _orig_bridge 'true'
-	option dns '114.114.114.114 8.8.8.8'
 	option ipaddr '10.0.0.1'
 	option ifname 'eth0'
 	option gateway '10.0.0.3'
+	option dns '180.168.255.118'
 
 config device
 	option type 'bridge'
