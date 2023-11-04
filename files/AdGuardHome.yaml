@@ -117,7 +117,7 @@ user_rules:
   - '@@||ksapisrv.com^'
   - '@@||gifshow.com^'
   - '@@||kuaishoust.com^'
-  - '@@||kaishouyun.com^'
+  - '@@||ksyun.com^'
   - '@@||kskwai.com^'
   - '@@||miaozhen.com^'
 dhcp:
