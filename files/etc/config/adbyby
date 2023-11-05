@@ -1,0 +1,26 @@
+
+config adbyby
+	option daemon '2'
+	option lan_mode '0'
+	option cron_mode '1'
+	option block_ios '0'
+	option wan_mode '1'
+	option mem_mode '1'
+	option update_source '1'
+	option enable '1'
+	option block_cnshort '0'
+	list subscribe_url 'https://cdn.jsdelivr.net/gh/cjx82630/cjxlist/cjx-annoyance.txt'
+	list subscribe_url 'https://easylist-downloads.adblockplus.org/easylistchina.txt'
+	list subscribe_url 'https://easylist-downloads.adblockplus.org/easyprivacy.txt'
+	list subscribe_url 'https://easylist-downloads.adblockplus.org/easylist.txt'
+	list subscribe_url 'https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt'
+	list subscribe_url 'https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/cpbl-abp-list.txt'
+	list subscribe_url 'https://anti-ad.net/easylist.txt'
+	list subscribe_url 'https://anti-ad.net/anti-ad-for-dnsmasq.conf'
+	list subscribe_url 'https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt'
+	list subscribe_url 'https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt'
+
+config acl_rule
+	option ipaddr '10.0.0.10'
+	option filter_mode 'global'
+
