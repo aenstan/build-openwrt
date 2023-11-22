@@ -6,16 +6,15 @@ config defaults
 	option flow_offloading_hw '0'
 	option fullcone '2'
 	option forward 'REJECT'
-	option syn_flood '1'
 
 config zone
 	option name 'lan'
-	list network 'lan'
 	option input 'ACCEPT'
 	option output 'ACCEPT'
 	option forward 'ACCEPT'
 	option masq '1'
 	option mtu_fix '1'
+	option network 'lan utun'
 
 config include
 	option path '/etc/firewall.user'
@@ -23,11 +22,6 @@ config include
 config include 'adbyby'
 	option type 'script'
 	option path '/var/etc/adbyby.include'
-	option reload '1'
-
-config include 'openclash'
-	option type 'script'
-	option path '/var/etc/openclash.include'
 	option reload '1'
 
 config redirect
@@ -240,8 +234,8 @@ config redirect
 	option name 'pro'
 	option src 'lan'
 
-config include 'AdGuardHome'
+config include 'openclash'
 	option type 'script'
-	option path '/usr/share/AdGuardHome/firewall.start'
+	option path '/var/etc/openclash.include'
 	option reload '1'
 
