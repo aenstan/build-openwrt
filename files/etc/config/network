@@ -14,7 +14,7 @@ config interface 'lan'
 	option ipaddr '10.0.0.1'
 	option ifname 'eth0'
 	option gateway '10.0.0.3'
-	option dns '10.0.0.1'
+	option dns '180.168.255.118'
 
 config device
 	option type 'bridge'
