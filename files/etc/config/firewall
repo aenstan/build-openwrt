@@ -239,3 +239,8 @@ config include 'openclash'
 	option path '/var/etc/openclash.include'
 	option reload '1'
 
+config include 'AdGuardHome'
+	option type 'script'
+	option path '/usr/share/AdGuardHome/firewall.start'
+	option reload '1'
+
